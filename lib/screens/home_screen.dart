@@ -51,9 +51,9 @@ class HomeScreen extends StatelessWidget {
           title: const Text('Home'),
         ),
         bottomNavigationBar: makeBottom,
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(24.r),
+        body: Padding(
+          padding: EdgeInsets.all(24.r),
+          child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -208,39 +208,79 @@ class HomeScreen extends StatelessWidget {
                           color: const Color(0xFF23AA49),
                           fontFamily: 'DM Sans'),
                     ),
-                    SizedBox(width: 16.h),
-                    Container(
-                      height: 99.h,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        shrinkWrap: true,
-                        children: [
-                          Container(
-                            width: 73.w,
-                            height: 99.h,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  "assets/92f1ea7dcce3b5d06cd1b1418f9b9413 3.png",
-                                ),
-                                SizedBox(height: 8.h),
-                                Text(
-                                  'Bell Pepper Red',
-                                  style: TextStyle(
-                                      fontSize: 14.sp,
-                                      fontWeight: FontWeight.w500,
-                                      color: const Color(0xFF06161C),
-                                      fontFamily: 'DM Sans'),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
                   ],
+                ),
+                SizedBox(width: 16.h),
+                Container(
+                  height: 214.h,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    children: [
+                      Container(
+                        width: 163.w,
+                        height: 214.h,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "assets/92f1ea7dcce3b5d06cd1b1418f9b9413 3.png",
+                            ),
+                            SizedBox(height: 8.h),
+                            Text(
+                              'Bell Pepper Red',
+                              style: TextStyle(
+                                  fontSize: 14.sp,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color(0xFF06161C),
+                                  fontFamily: 'DM Sans'),
+                            ),
+                            SizedBox(height: 4.h),
+                            Text(
+                              "1kg, 4tk",
+                              style: TextStyle(
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: const Color(0xFFFF324B),
+                                  fontFamily: 'DM Sans'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: 163.w,
+                        height: 214.h,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image.asset(
+                              "assets/favpng_raw-meat-steak-beef-food 1.png",
+                            ),
+                            SizedBox(height: 8.h),
+                            Text(
+                              'Lamb Meat',
+                              style: TextStyle(
+                                  fontSize: 14.sp,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color(0xFF06161C),
+                                  fontFamily: 'DM Sans'),
+                            ),
+                            SizedBox(height: 4.h),
+                            Text(
+                              '1kg, 45tk',
+                              style: TextStyle(
+                                  fontSize: 16.sp,
+                                  fontWeight: FontWeight.bold,
+                                  color: const Color(0xFFFF324B),
+                                  fontFamily: 'DM Sans'),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),

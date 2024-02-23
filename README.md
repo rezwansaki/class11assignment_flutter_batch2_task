@@ -1,6 +1,6 @@
 # Class 11 Assignment - Flutter Batch2 Task - Figma to Flutter Code 
 
-![Alt text](screenshot_1.png "Class 11 Assignment - Flutter Batch2 Task - Figma to Flutter Code")
+![Alt text](screenshot1.png "Class 11 Assignment - Flutter Batch2 Task - Figma to Flutter Code")
 
 This is an assignment for 'flutter batch2 - influxdev'. Flutter project. 
 
